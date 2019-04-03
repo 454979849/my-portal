@@ -1,0 +1,29 @@
+body{
+  padding-top: 60px;
+  background-color: #f9f9f9;
+
+  header.header {
+    background: #000;
+
+    &:hover {
+      background: #000;
+    }
+  }
+  &>.containers{
+    padding-top:15px;
+    #main {
+      min-height:700px;
+      &:after{
+        content:'';
+        display:block;
+        clear:both;
+      }
+      padding-bottom: 30px;
+
+      & > .content {
+        float: right;
+        width: 960px;
+      }
+    }
+  }
+}

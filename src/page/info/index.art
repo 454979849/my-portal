@@ -1,0 +1,65 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}} 数据变现 {{/block}}
+{{block 'content'}}
+<div class="bigImg">
+
+</div>
+<div class="containers">
+  <div id="main">
+    {{include '../../component/base/menu/menu.art'}}
+    <div class="content">
+      <div class="fields">
+        <div class="bjfs">
+          <p>标价方式：</p>
+          <a class="active">不限</a>
+          <a>免费</a>
+          <a>收费</a>
+        </div>
+        <div class="sjgs">
+          <p>数据格式：</p>
+          <a class="active">不限</a>
+          <a>视频</a>
+          <a>音频</a>
+          <a>文本</a>
+          <a>图像</a>
+          <a>其他</a>
+        </div>
+        <div class="bjly">
+          <p>数据来源：</p>
+          <a class="active">不限</a>
+          <a>企业</a>
+          <a>政府</a>
+          <a>公益</a>
+          <a>个人</a>
+          <a>其他</a>
+        </div>
+        <div class="bjpx">
+          <p>数据排序：</p>
+          <div class="new" data-method="create_date">
+            <span>最新</span>
+            <i class="bottom"></i>
+          </div>
+          <div class="hot active" data-method="apply_number">
+            <span>最热</span>
+            <i class="bottom"></i>
+          </div>
+        </div>
+        <div class="viewType">
+          <div class="list">
+            <i class="fa fa-th-list"></i>
+            列表
+          </div>
+          <div class="grid active">
+            <i class="fa fa-th-large"></i>
+            大图
+          </div>
+        </div>
+      </div>
+      <div class="listBox">
+        {{include '../../component/info/thList/thList.art'}}
+      </div>
+      <div id="pagination" class="myPagination"></div>
+    </div>
+  </div>
+</div>
+{{/block}}

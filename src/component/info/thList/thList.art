@@ -1,0 +1,22 @@
+<ul class="thList">
+  {{each data}}
+  <li>
+    <div class="info">
+      <img src="{{$value.icon}}">
+      <p class="t">{{$value.name}}</p>
+      <p class="num">申请量（{{$value.apply_number}}）</p>
+      <p class="time">类型：{{$value.type}}</p>
+      <p class="time">注册时间：{{$value.create_date}}</p>
+    </div>
+    <div class="detail">
+      <div class="center">
+        <p>{{$value.remark}}</p>
+        <div class="c">
+          <a id="{{$value.id}}" class="item"  href="../views/detail.html?type={{$value.oldtype}}&id={{$value.id}}" target="_blank">查看详情</a>
+        </div>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>
+

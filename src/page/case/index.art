@@ -1,0 +1,8 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}典型案例{{/block}}
+{{block 'content'}}
+
+<div class="big-containers">
+  {{include '../../component/case/case.art'}}
+</div>
+{{/block}}

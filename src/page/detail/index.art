@@ -1,0 +1,15 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}  {{/block}}
+{{block 'content'}}
+
+<div class="containers">
+
+  <div id="main">
+    {{include '../../component/base/menu/menu.art'}}
+
+    <div class="content">
+
+    </div>
+  </div>
+</div>
+{{/block}}

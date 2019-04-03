@@ -1,0 +1,20 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}平台资讯{{/block}}
+{{block 'content'}}
+<div class="containers">
+  <div class="top">
+    <div class="searchBox">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="输入关键词搜索">
+        <div class="input-group-append">
+          <i class="fa fa-search input-group-text"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tpl">
+    {{include '../../component/infomation/infomation.art'}}
+  </div>
+  <div id="pagination" class="myPagination"></div>
+</div>
+{{/block}}

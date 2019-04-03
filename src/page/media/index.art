@@ -1,0 +1,130 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}详情页_全媒体融合平台{{/block}}
+{{block 'content'}}
+<div class="bigBg">
+  <div class="bannerBox">
+    <p class="p1">弹指间，融众网之优，合百媒所长！</p>
+    <p class="p2">Integrate all the strengths of media in a flash</p>
+    <p class="p3"></p>
+  </div>
+</div>
+<div class="detailMain">
+  <div class="detailBox">
+    <div class="detailTitle">
+      <p class="leftLine1"></p>
+      <p class="leftLine2"></p>
+      <div class="detailContainer">
+        <p class="p1">Platform Overview</p>
+        <p class="p2 anli">平台概述&nbsp;&nbsp;&nbsp;<span class="span4"></span><span class="span2"></span> </p>
+        <div class="detailBoxMain">
+          <p class="p1">东湖大数据运用云计算、大数据技术打造开放、泛网络化协同工作的全媒体新闻内容生产平台，实现新闻资源整合、编辑制作、审核和发布的高效运作。集合传统媒体公信力及新媒体传播力，构建“大新闻”采编模式。</p>
+          <p class="p1">全媒体融合生产平台是适应全媒体生产，跨业务的融合支撑系统。提供公共服务及融合生产能力，完成内容的汇聚与管理、内容的组织及分析，内容的融合应用及专业应用，内容的分发与交换，业务数据的运行、展示及管理。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detailBox">
+    <div class="detailTitle">
+      <p class="leftLine1"></p>
+      <p class="leftLine2"></p>
+
+      <div class="detailContainer">
+        <p class="p1">Application target</p>
+        <p class="p2 anli">应用目标&nbsp;&nbsp;&nbsp;<span class="span4"></span><span class="span2"></span> </p>
+        <div class="detailBoxMain4">
+          <div class="applicationBox">
+            <div class="appH1">
+              <p>新闻进行融合生产，开展统一指挥策划，围绕整体新闻素材打造媒体界“中央厨房”，生产的新闻资讯多渠道立体式全方位发布。节目变产品，观众变用户。利用用户改进节目。培养观众粉丝，增强对节目的粘性。发展媒体电商模式，媒体界的“长尾效应”，让新闻变得持续传播。</p>
+            </div>
+            <div class="divTop1">
+              <div class="divImg"></div>
+            </div>
+            <div class="divBottom">
+              <p class="p1">产品融合</p>
+              <p class="p2">新闻进行融合生产，开展统一指挥策划，围绕整体新闻素材打造媒体界“中央厨房”，生产的新闻资讯多渠道立体...</p>
+              <p class="p3">more</p>
+            </div>
+          </div>
+          <div class="applicationBox">
+            <div class="appH1">
+              <p>内容依然是媒体立足之本，将内容生产由新闻、节目的独立，变为基于产品融合，实现内容生产融合，同时利用多屏展示及运营实现业务融合。在电视、手机、PAD等终端，结合平面媒体、户外媒体、新媒体、广播电视、APP应用、互动媒体等，实现媒体业务融合开展。</p>
+            </div>
+            <div class="divTop2">
+              <div class="divImg"></div>
+            </div>
+            <div class="divBottom">
+              <p class="p1">业务融合</p>
+              <p class="p2">内容依然是媒体立足之本，将内容生产由新闻、节目的独立，变为基于产品融合，实现内容生产融合，同时利用多屏...</p>
+              <p class="p3">more</p>
+            </div>
+          </div>
+          <div class="applicationBox">
+            <div class="appH1">
+              <p>利用对微信、微博、论坛、贴吧、邮件、短信、外电、信号、视频、广告等各类营销资源的融合，实时聚合全网最新热点话题，开展内容热点分析，实现用户精准推送营销目的。</p>
+            </div>
+            <div class="divTop3">
+              <div class="divImg"></div>
+            </div>
+            <div class="divBottom">
+              <p class="p1">营销融合</p>
+              <p class="p2">利用对微信、微博、论坛、贴吧、邮件、短信、外电、信号、视频、广告等各类营销资源的融合，实时聚合全网最新...</p>
+              <p class="p3">more</p>
+            </div>
+          </div>
+          <div class="applicationBox">
+            <div class="appH1">
+              <p>内容生产系统的统一，实现平台上产品生产链的统一。同时由需求分析、产品设计、产品生产、产品包装、产品销售、跟踪服务等全媒体产业链的组合，达到团队无缝协作、生产无缝对接。同时利用“众包”功能，激活社会成员的闲置时间、闲置认知、闲置资源，实现人人生产、人人通道、人人互动、为产品服务、内容创新带来更多的来源。最终形成真正的媒体大团队融合。</p>
+            </div>
+            <div class="divTop4">
+              <div class="divImg"></div>
+            </div>
+            <div class="divBottom">
+              <p class="p1">团队融合</p>
+              <p class="p2">内容生产系统的统一，实现平台上产品生产链的统一。同时由需求分析、产品设计、产品生产、产品包装、产品销售...</p>
+              <p class="p3">more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="detailBox">
+    <div class="detailTitle">
+      <p class="leftLine1"></p>
+      <p class="leftLine2"></p>
+      <div class="detailContainer">
+        <p class="p1">Product Architecture</p>
+        <p class="p2 anli">产品构架&nbsp;&nbsp;&nbsp;<span class="span4"></span><span class="span2"></span> </p>
+        <div class="detailBoxMain2">
+          <img src="../../asset/productBG2.png" >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detailBox">
+    <div class="detailTitle">
+      <p class="leftLine1"></p>
+      <p class="leftLine2"></p>
+      <div class="detailContainer">
+        <p class="p1">Case presentation</p>
+        <p class="p2 anli">案例展示&nbsp;&nbsp;&nbsp;<span class="span4"></span><span class="span2"></span> </p>
+        <div class="detailBoxMain">
+          <div class="caseImg">
+            <img class="caseImg1" src="../../asset/dev/mediaCaseImg1.png">
+            <a class="mediaCaseHover1" ></a>
+          </div>
+          <div class="caseImg">
+            <img class="caseImg2" src="../../asset/dev/mediaCaseImg2.png">
+            <a class="mediaCaseHover2" ></a>
+          </div>
+          <div class="caseImg">
+            <img class="caseImg3" src="../../asset/dev/mediaCaseImg3.png">
+            <a class="mediaCaseHover3" ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/block}}

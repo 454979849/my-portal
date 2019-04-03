@@ -1,0 +1,218 @@
+#main>.content .data{
+  .detailInfo{
+    width: 952px;
+    height: 270px;
+    margin-left: 8px;
+    &>.left{
+      float: left;
+      width: 712px;
+      height: 270px;
+      background-color: #fff;
+      padding-right:5px;
+      &>.t{
+        height: 48px;
+        border-bottom: 1px dashed #eee;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-left:40px;
+        h1{
+          font-weight:normal;
+          float: left;
+          height: 48px;
+          line-height: 48px;
+          font-size: 16px;
+          color: #333;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        &>div{
+          margin-right: 15px;
+          cursor: pointer;
+          font-size:16px;
+          color:#999;
+          line-height:48px;
+          i{
+            font-size:18px;
+            vertical-align: middle;
+            margin-right:2px;
+            &.fa-heart{
+              color:#FDA127;
+            }
+          }
+        }
+      }
+      &>.b{
+        height:222px;
+        img{
+          height:84px;
+        }
+        &>.left{
+          width:280px;
+          height:100%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &>.right{
+          width:427px;
+          height:100%;
+          display:flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding:24px 0;
+          p.line{
+            width: 422px;
+            font-size: 14px;
+            color: #333;
+            span.labels{
+              font-weight:bold;
+            }
+          }
+          &>a{
+            display: block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 3px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            background-color: #409EFF;
+            &:hover{
+              background-color: #0096e8;
+            }
+          }
+        }
+      }
+    }
+    &>.right{
+      float: right;
+      width: 232px;
+      height: 270px;
+      background-color: #fff;
+      text-align:center;
+      .name{
+        font-size: 16px;
+        color: #484848;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 20px;
+      }
+      img{
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+        margin-top:28px;
+      }
+      p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        color: #999;
+        padding-top: 15px;
+      }
+    }
+  }
+  .tabBox{
+    &>.tabs{
+      width:750px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 8px;
+      background-color: #eee;
+      border-radius: 5px 5px 0 0;
+      &>p{
+        float: left;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px 5px 0 0;
+        background-color: #eee;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+        &:hover{
+          color: #409EFF;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 5px 5px 0 0;
+          background-color: #fff;
+        }
+        &.active{
+          color: #409EFF;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 5px 5px 0 0;
+          background-color: #fff;
+        }
+      }
+    }
+    &>.contentBox{
+      margin-left:8px;
+      padding:20px 20px;
+      background:#fff;
+      &>div{
+        width:100%;
+        display:none;
+        &:first-child{
+          display:block;
+        }
+      }
+      .tt{
+        height: 30px;
+        background: #f1f1f1;
+        line-height: 30px;
+        font-size: 14px;
+        text-indent: 15px;
+        color: #404a58;
+        margin:15px 0;
+      }
+      table.grid{
+        border-collapse: collapse;
+        width:calc(~"100% - 30px");
+        margin-left:15px;
+        color:#666;
+        td{
+          border:1px solid #ddd;
+          padding:8px;
+          text-align:center;
+          font-size:12px;
+          &:first-child{
+            width:100px;
+          }
+        }
+      }
+      table.list{
+        border-collapse: collapse;
+        color:#666;
+        width:calc(~"100% - 30px");
+        margin-left:15px;
+        tr{
+          th,td{
+            padding: 8px;
+            border-bottom: 1px dashed #ddd;
+            font-size: 12px;
+            text-align:center;
+          }
+        }
+      }
+      pre{
+        border: 0;
+        background: #fff;
+        color: #666;
+        height: 500px;
+        overflow: auto;
+        display: block;
+        padding: 8.5px;
+        margin: 0 0 9px;
+        font-size: 12px;
+        line-height: 1.42857143;
+      }
+    }
+  }
+}

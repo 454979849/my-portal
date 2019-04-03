@@ -1,0 +1,74 @@
+@keyframes cc3 {
+  0%{transform:rotate(0deg) scale(1)}
+  50%{transform:rotate(360deg) scale(0.5)}
+  100%{transform:rotate(0deg) scale(1)}
+}
+.dynamic{
+  height:250px;
+  margin-bottom:50px;
+  &>.fl{
+    width:230px;
+    height:100%;
+    position:relative;
+    &:hover{
+      img:last-child{
+        animation: cc3 1s ease;
+      }
+    }
+    img:last-child{
+      position: absolute;
+      bottom: 65px;
+      left: 56px;
+    }
+  }
+  &>.fr{
+    width:962px;
+    height:100%;
+    background-color:#fff;
+    .top{
+      height:40px;
+      //border-top:3px solid #3283ee;
+      padding-right:50px;
+      &>a{
+        float:right;
+        color: #b4b4b4;
+        font-size: 14px;
+        padding-right: 10px;
+        background: url(../../../asset/left_hui_03.png)no-repeat right 5px;
+        display: block;
+        margin-top: 18px;
+      }
+    }
+    .listBox{
+      height:250px;
+      padding-top:25px;
+      padding-bottom:25px;
+      ul{
+        width:50%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:0 25px;
+        &.fl{
+          border-right:1px solid #e5e5e5;
+        }
+        a.item{
+          display:flex;
+          font-size:14px;
+          color:#626262;
+          &:hover{
+            color: #409EFF;
+          }
+          span.title{
+            flex:1;
+            margin-right:20px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+          }
+        }
+      }
+    }
+  }
+}

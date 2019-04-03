@@ -1,0 +1,64 @@
+body {
+  padding-top: 60px;
+  background-color: #f9f9f9;
+
+  header.header {
+    background: #000;
+
+    &:hover {
+      background: #000;
+    }
+  }
+  &>.containers{
+    padding-top:15px;
+    .top{
+      height:50px;
+      position:relative;
+      .searchBox{
+        position:absolute;
+        top:8px;
+        right:0;
+        height:100%;
+        width:300px;
+      }
+    }
+    .tplBox{
+      overflow:hidden;
+      padding:20px 13px;
+      &>.left{
+        float: left;
+        width: 150px;
+        margin-top: 20px;
+        margin-right: 40px;
+        li{
+          font-size: 16px;
+          height: 40px;
+          line-height: 40px;
+          border-bottom: 1px solid #eee;
+          cursor: pointer;
+          color:#606060;
+          &.active,&:hover{
+            color: #409EFF;
+            i{
+              display:block;
+            }
+          }
+          i{
+            float: right;
+            font-size: 12px;
+            margin-top: 16px;
+            display: none;
+            color: #409EFF;
+          }
+        }
+      }
+      &>.right{
+        float:right;
+        min-height:500px;
+        padding-left:40px;
+        border-left: 1px solid #eee;
+        width:980px;
+      }
+    }
+  }
+}

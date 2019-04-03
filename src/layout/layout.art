@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <title>{{block 'title'}}My Site{{/block}}</title>
+</head>
+<body class="fadeIn animated">
+<div id="pageLoading">
+  <img src="../asset/loading.gif" >
+</div>
+<div id="toTop">
+  <i class="fa fa-angle-up"></i>
+</div>
+{{include '../component/base/header/header.art'}}
+{{block 'content'}}{{/block}}
+{{include '../component/base/footer/footer.art'}}
+</body>
+</html>

@@ -1,0 +1,43 @@
+<header class="header">
+  <div class="containers">
+    <a class="logo fl" href="../views/index.html">
+      <img src="../../../asset/logo.png">
+      <span>大数据资源开放平台</span>
+    </a>
+    <div class="menu fl">
+      <li><a href="../views/info.html" id="info">资源中心</a></li>
+      <li>
+        <a>平台资讯</a>
+        <div class="subBox"></div>
+        <ul class="subList">
+          <li><a href="../views/question.html" id="question">常见问题</a><i></i></li>
+          <li><a href="../views/infomation.html" id="infomation">行业资讯</a><i></i></li>
+          <li><a href="../views/notice.html" id="notice">平台公告</a><i></i></li>
+        </ul>
+      </li>
+      <li><a href="../views/case.html" id="case">典型案例</a></li>
+      <li><a href="../views/userCenter.html" id="userCenter">个人中心</a></li>
+    </div>
+
+    <div class="user fr">
+      <a class="login" id="noLogin">登录</a>
+      <a class="login" href="../views/login.html" id="yesLogin"></a>
+      <a class="msgs">
+        <i class="fa fa-bell"></i>
+        <span>15</span>
+      </a>
+      <ul class="user-panel">
+        <li>
+          <label>账号</label>
+          <span>admin</span>
+        </li>
+        <li>
+          <label>账号</label>
+          <span>admin</span>
+        </li>
+        <li class="logout">安全退出</li>
+      </ul>
+    </div>
+  </div>
+</header>
+

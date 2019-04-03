@@ -1,0 +1,161 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+textarea,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+label {
+  font-weight: 700;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+div:focus {
+  outline: none;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.block {
+  display: block;
+}
+.pointer {
+  cursor: pointer;
+}
+.inlineBlock {
+  display: block;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.containers {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-size: 14px !important;
+}
+body p {
+  margin: 0;
+}
+body ol,
+body ul,
+body li {
+  margin: 0;
+  list-style: none;
+}
+body .table td,
+body .table th {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,41 @@
+<div class="commentArea">
+  <div class="release">
+    <div class="h">
+      <img src="../../../asset/userDefault.jpg" >
+      <p>文明上网理性发言（您的言论仅代表您个人的观点）</p>
+    </div>
+    <textarea maxlength="200" class="input commentContent" placeholder="请输入200字以内的内容，谢谢！" ></textarea>
+    <div class="f">
+      <a class="releaseSend">发布评论</a>
+    </div>
+  </div>
+  <p class="text">全部评论（{{total?total:0}}）</p>
+  <div class="allComment">
+    <ul>
+      {{each data}}
+      <li>
+        <div class="left fl">
+          <img src="../../../asset/userDefault.jpg" >
+          <p>{{$value.creator}}</p>
+        </div>
+        <div class="right">
+          <div class="h">
+            发表于{{$value.createDate}}
+          </div>
+          <div class="b">{{$value.comment}}</div>
+          <div class="f">
+            <p class="c-star" data-commentid="{{$value.id}}" data-admireid="{{$value.admires[0]?$value.admires[0].id:null}}">
+              <i class="fa fa-thumbs-o-up {{$value.admires[0]?'active':''}}"></i>
+              <span>赞 {{$value.admireCount}}</span>
+            </p>
+            <p class="c-apply">
+              <i class="fa fa-commenting-o"></i>
+              <span>回复</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

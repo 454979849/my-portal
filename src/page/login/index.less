@@ -1,0 +1,128 @@
+body {
+  padding-top: 60px;
+  background-color: #f8f8f8;
+
+  header.header {
+    background: #000;
+
+    &:hover {
+      background: #000;
+    }
+  }
+
+  #login {
+    height: 816px;
+    background: url(../../asset/bgLogin.png) 0 0 no-repeat;
+
+    .inner {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .wordCloudBoxNew{
+        width: 591px;
+        height: 591px;
+        background: url(../../asset/registerPic.png) no-repeat left center;
+        position: relative;
+        a.dataToMoney{
+          display: block;
+          width: 132px;
+          height: 46px;
+          line-height: 46px;
+          text-align: center;
+          font-size: 24px;
+          position: absolute;
+          top: 273px;
+          left: 217px;
+          background-color: #fff;
+          color: #409EFF;
+        }
+        #cloudBox {
+          position: relative;
+          width: 566px;
+          height: 566px;
+          a{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: #fff;
+            text-decoration: none;
+            padding: 3px 20px;
+            font-size: 12px;
+          }
+        }
+      }
+
+
+      .loginContent {
+        width: 457px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        margin-left: 100px;
+        padding: 10px;
+
+        .contentBox {
+          width: 100%;
+          height: 100%;
+          background-color: #f8f8f8;
+          border-radius: 8px;
+          padding: 20px;
+
+          .content {
+            height: 340px;
+            width: 100%;
+            background-color: #fff;
+            padding: 40px;
+            position: relative;
+            border-radius: 8px;
+            input.userName {
+              padding-left: 34px;
+              background: url(../../asset/login_user_03.png) 7px 8px no-repeat;
+            }
+
+            input.pwd {
+              padding-left: 34px;
+              background: url(../../asset/0_1_Login_password_03.jpg) 8px 7px no-repeat;
+            }
+
+            .other {
+              height: 30px;
+              margin-top:15px;
+              span {
+                line-height:30px;
+                margin-left: 7px;
+                vertical-align: middle;
+              }
+              i.checkBox {
+                width: 16px;
+                height: 16px;
+                border: 1px solid #999999;
+                border-radius: 2px;
+                display: inline-block;
+                margin-top:7px;
+                vertical-align: top;
+                cursor:pointer;
+                &.active {
+                  border: 1px solid #409EFF;
+                  background: url(../../asset/0_1_Login_yes_03.jpg) no-repeat center 4px;
+                }
+              }
+
+              a.wjmm {
+                color: #409EFF;
+                cursor: pointer;
+                float: right;
+                line-height:30px;
+              }
+            }
+            .flex{
+              display:flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}

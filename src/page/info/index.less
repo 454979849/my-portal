@@ -1,0 +1,149 @@
+body {
+  background-color: #f9f9f9;
+
+  .bigImg {
+    height: 400px;
+    background: url(../../asset/infoBg.png) 0 0 no-repeat / 100% 100%;
+  }
+
+  & > .containers {
+    padding-top: 15px;
+
+    #main {
+      overflow: hidden;
+      padding-bottom: 30px;
+
+      & > .content {
+        float: right;
+        width: 960px;
+
+        .fields {
+          width: 952px;
+          height: 250px;
+          background-color: #fff;
+          margin-left: 8px;
+          padding: 0 30px;
+
+          & > div {
+            height: 50px;
+
+            &:not(:last-child) {
+              border-bottom: 1px dashed #eee;
+            }
+
+            & > p {
+              float: left;
+              height: 25px;
+              line-height: 25px;
+              margin-top: 12px;
+              padding: 0 9px;
+              font-size: 14px;
+              color: #333;
+              font-weight: bold;
+            }
+
+            & > a {
+              float: left;
+              height: 25px;
+              line-height: 25px;
+              margin-top: 12px;
+              padding: 0 9px;
+              font-size: 14px;
+              color: #333;
+
+              &.active {
+                background-color: #409EFF;
+                color: #fff;
+              }
+            }
+
+            & > div.new, & > div.hot {
+              cursor: pointer;
+              padding: 0 5px;
+              margin-right: 25px;
+              width: 57px;
+              height: 23px;
+              border: 1px solid #409EFF;
+              float: left;
+              margin-top: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+
+              &:hover, &.active {
+                background-color: #409EFF;
+
+                span {
+                  color: #fff;
+                }
+
+                i {
+                  &.bottom {
+                    background: url(../../asset/arrow_bottom2.png) 0 0 no-repeat / 100% 100%;
+                  }
+
+                  &.top {
+                    background: url(../../asset/arrow_top2.png) 0 0 no-repeat / 100% 100%;
+                  }
+                }
+              }
+
+              span {
+                color: #333;
+              }
+
+              i {
+                display: block;
+                width: 10px;
+                height: 10px;
+                &.bottom {
+                  background: url(../../asset/arrow_bottom.png) 0 0 no-repeat / 100% 100%;
+                }
+                &.top {
+                  background: url(../../asset/arrow_top.png) 0 0 no-repeat / 100% 100%;
+                }
+              }
+            }
+          }
+
+          .viewType {
+            height: 50px;
+
+            & > div {
+              height: 50px;
+              float: right;
+              margin-left: 20px;
+              color: #484848;
+              line-height: 50px;
+              cursor: pointer;
+
+              i {
+                color: #999;
+                font-size: 16px;
+                position: relative;
+                top: 1px;
+              }
+
+              &:hover {
+                color: #ffa400;
+
+                i {
+                  color: #ffa400;
+                }
+              }
+
+              &.active {
+                color: #ffa400;
+
+                i {
+                  color: #ffa400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

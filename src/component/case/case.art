@@ -1,0 +1,31 @@
+<ul class="case-flexBox">
+  {{each data}}
+  <li>
+    <a href="">
+      <img src="{{$value.imgUrl}}">
+      <div class="flag">
+        <span class="bgbox"></span>
+        <p class="stit">
+          <span class="line linet"></span>
+          <span>{{$value.title1}}</span>
+          <br>
+          <span>{{$value.title2}}</span>
+          <span class="line lineb"></span>
+        </p>
+      </div>
+    </a>
+    <div class="cont-box">
+      <p class="stit"><a target="_blank" href="">{{$value.title1}}</a></p>
+      <div class="lab-font">
+        <span>{{$value.type1}}</span> / <span>{{$value.type2}}</span>
+      </div>
+      <a href="" class="bot-link" target="_blank">
+          <span class="link-detail">
+            Details
+          </span>
+        <i class="fa fa-long-arrow-right"></i>
+      </a>
+    </div>
+  </li>
+  {{/each}}
+</ul>

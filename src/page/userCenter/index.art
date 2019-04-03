@@ -1,0 +1,9 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}个人中心{{/block}}
+{{block 'content'}}
+
+<div id="app">
+
+</div>
+
+{{/block}}

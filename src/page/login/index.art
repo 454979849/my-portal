@@ -1,0 +1,57 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}登录{{/block}}
+{{block 'content'}}
+<div id="login">
+  <div class="containers inner">
+    <div class="wordCloudBoxNew">
+      <a class="dataToMoney">数据变现</a>
+      <div id="cloudBox">
+        <a>社交与征信</a>
+        <a>户籍、生育</a>
+        <a>文娱、音乐</a>
+        <a>健康医疗</a>
+        <a>住房、民生</a>
+        <a>影视</a>
+        <a>安全监督</a>
+        <a>人才、就业</a>
+        <a>采购与物流</a>
+        <a>经典音乐</a>
+        <a>智慧生活</a>
+        <a>知识产权</a>
+        <a>贸易进出口</a>
+        <a>科研应用</a>
+        <a>政府数据</a>
+        <a>金融商贸</a>
+      </div>
+    </div>
+    <div class="loginContent">
+      <div class="contentBox">
+        <div class="content">
+          <form id="loginForm" class="needs-validation" novalidate>
+            <div class="form-group">
+              <input type="text" name="userName" class="form-control userName" placeholder="请输入手机号或者邮箱地址"
+                     maxlength="100" required
+                     pattern="^(0|86|17951)?(13[0-9]|15[0-9]|17[0-9]|18[0-9]|14[0-9]|19[0-9])[0-9]{8}$|^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$">
+              <div class="invalid-feedback">
+                手机号或者邮箱地址无效
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="password" name="pwd" class="form-control pwd" placeholder="请输入您的密码" required>
+              <div class="invalid-feedback">
+                密码不能为空
+              </div>
+            </div>
+            <div class="form-group other">
+              <i class="checkBox"></i>
+              <span>七天之内自动登录</span>
+              <a class="wjmm" href="">忘记密码</a>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">立即登录</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/block}}

@@ -1,0 +1,44 @@
+<div class="qs">
+  <ul>
+    <li>
+      <div class="q">
+        <span>Q</span>
+        <p>资源怎么注册？</p>
+      </div>
+      <div class="s">
+        <span>A</span>
+        <p>点击资源注册-新增-填写相应表格提交即可！</p>
+      </div>
+    </li>
+    <li>
+      <div class="q">
+        <span>Q</span>
+        <p>资源如何申请？</p>
+      </div>
+      <div class="s">
+        <span>A</span>
+        <p>1、进入资源中心页面-点击加入申请清单。2、进入个人中心-我的申请清单-点击提交申请即可</p>
+      </div>
+    </li>
+    <li>
+      <div class="q">
+        <span>Q</span>
+        <p>点击加入申请清单后显示已申请</p>
+      </div>
+      <div class="s">
+        <span>A</span>
+        <p>进入个人中心页面查看，如显示正在审批中，请耐心等候管理员审批</p>
+      </div>
+    </li>
+    <li>
+      <div class="q">
+        <span>Q</span>
+        <p>我想发布一条资源</p>
+      </div>
+      <div class="s">
+        <span>A</span>
+        <p>请联系管理员授权，授权后就可以发布资源</p>
+      </div>
+    </li>
+  </ul>
+</div>

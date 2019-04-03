@@ -1,0 +1,29 @@
+<div class="dynamic">
+  <div class="fl">
+    <img src="../../../asset/platformD.png" >
+    <img src="../../../asset/plateformD2.png" >
+  </div>
+  <div class="fr">
+    <!--<div class="top">-->
+      <!--<a href="">查看更多</a>-->
+    <!--</div>-->
+    <div class="listBox">
+      <ul class="fl">
+        {{each leftData}}
+        <a class="item">
+          <span class="title" title="{{$value.title}}">{{$value.title}}</span>
+          <span class="date">{{$value.create_date}}</span>
+        </a>
+        {{/each}}
+      </ul>
+      <ul class="fr">
+        {{each rightData}}
+        <a class="item">
+          <span class="title" title="{{$value.title}}">{{$value.title}}</span>
+          <span class="date">{{$value.create_date}}</span>
+        </a>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

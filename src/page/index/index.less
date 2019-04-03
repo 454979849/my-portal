@@ -1,0 +1,80 @@
+body{
+  background-color:#f9f9f9;
+}
+#products {
+  height: 118px;
+  background:#fff;
+  .containers{
+    display: flex;
+    height:118px;
+    a {
+      flex: 1;
+      &:nth-child(1) {
+        background: url(../../asset/media1.png) 0 0 no-repeat / 100% 100%;
+        &:hover{
+          background: url(../../asset/media1H.png) 0 0 no-repeat / 100% 100%;
+        }
+      }
+      &:nth-child(2) {
+        background: url(../../asset/media2.png) 0 0 no-repeat / 100% 100%;
+        &:hover{
+          background: url(../../asset/media2H.png) 0 0 no-repeat / 100% 100%;
+        }
+      }
+      &:nth-child(3) {
+        background: url(../../asset/media3.png) 0 0 no-repeat / 100% 100%;
+        &:hover{
+          background: url(../../asset/media3H.png) 0 0 no-repeat / 100% 100%;
+        }
+      }
+      &:nth-child(4) {
+        background: url(../../asset/media3.png) 0 0 no-repeat / 100% 100%;
+        &:hover{
+          background: url(../../asset/media3H.png) 0 0 no-repeat / 100% 100%;
+        }
+      }
+      &:nth-child(5) {
+        background: url(../../asset/media3.png) 0 0 no-repeat / 100% 100%;
+        &:hover{
+          background: url(../../asset/media3H.png) 0 0 no-repeat / 100% 100%;
+        }
+      }
+    }
+  }
+}
+
+.tit{
+  width: 1200px;
+  height: 40px;
+  margin: 40px auto 25px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  a{
+    color: #b4b4b4;
+    font-size: 16px;
+    padding-right: 10px;
+    background: url(../../asset/left_hui_03.png)no-repeat right 5px;
+    display: block;
+    margin-top: 18px;
+  }
+}
+
+#dynamic{
+  .tabs{
+    height:100%;
+    width:400px;
+    display:flex;
+    justify-content: space-between;
+    padding:0 40px;
+    &>div{
+      color:#484848;
+      font-size: 20px;
+      cursor:pointer;
+      &.active{
+        color: #1d76eb;
+        border-bottom: 3px solid #1d76eb;
+      }
+    }
+  }
+}

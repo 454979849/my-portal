@@ -1,0 +1,39 @@
+<div class="leftMenu">
+  <div class="t">
+    <i class="fa fa-bars">
+
+    </i>
+    <span class="dynamic"></span>
+    <span>导航</span>
+  </div>
+  <ul>
+    {{each data}}
+    <li data-sublength="{{$value.children.length}}">
+      <div class="center bigType" data-bigid="{{$value.id}}">
+        <div class="title">
+          <!--<i class="fa fa-car"></i>-->
+          <span>{{$value.name}}</span>
+        </div>
+        <i class="fa fa-angle-right"></i>
+      </div>
+
+      <div class="secondList">
+        <h4>{{$value.name}}</h4>
+        <ul>
+          {{each $value.children.slice(0,10) item index}}
+          <a class="smallType" data-bigid="{{$value.id}}" data-smallid="{{item.id}}">{{item.name}}</a>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="threeList">
+        <h4></h4>
+        <ul>
+          {{each $value.children.slice(11) item index}}
+          <a class="smallType" data-bigid="{{$value.id}}" data-smallid="{{item.id}}">{{item.name}}</a>
+          {{/each}}
+        </ul>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>

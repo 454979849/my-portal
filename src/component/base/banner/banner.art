@@ -1,0 +1,65 @@
+<div id="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <img src="../../../asset/banner/11.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:111px;left:60%;width:150px">
+        <img src="../../../asset/banner/12.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:370px;left:42%;width:150px">
+        <img src="../../../asset/banner/13.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:370px;left:79%;width:150px">
+      </div>
+      <div class="swiper-slide slide2">
+        <img src="../../../asset/banner/21.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0"
+             style="position:absolute;top:100px;left:24%;width:170px;">
+        <img src="../../../asset/banner/22.png" class="ani" swiper-animate-effect="fadeInRight"
+             swiper-animate-duration="1s" swiper-animate-delay="0"
+             style="position:absolute;top:100px;left:50%;width:286px;">
+        <img src="../../../asset/banner/23.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="1s" swiper-animate-delay="0"
+             style="position:absolute;top:316px;left:33%;width:170px;">
+        <img src="../../../asset/banner/24.png" class="ani" swiper-animate-effect="fadeInRight"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0"
+             style="position:absolute;top:316px;left:62%;width:228px;">
+      </div>
+      <div class="swiper-slide slide3">
+        <img src="../../../asset/banner/31.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:100px;left:46%;width:118px;z-index:2">
+        <img src="../../../asset/banner/32.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"
+             style="position:absolute;top:281px;left:35%;width:100px;z-index:2">
+        <img src="../../../asset/banner/33.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"
+             style="position:absolute;top:281px;left:42%;width:100px;z-index:2">
+        <img src="../../../asset/banner/34.png" class="ani" swiper-animate-effect="fadeInRight"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"
+             style="position:absolute;top:281px;left:52%;width:100px;z-index:2">
+        <img src="../../../asset/banner/35.png" class="ani" swiper-animate-effect="fadeInRight"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"
+             style="position:absolute;top:281px;left:59%;width:100px;z-index:2">
+        <img src="../../../asset/banner/36.png" class="ani" swiper-animate-effect="fadeInLeft"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:0;left:0;width:49%;height:100%;z-index:1">
+        <img src="../../../asset/banner/37.png" class="ani" swiper-animate-effect="fadeInRight"
+             swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+             style="position:absolute;top:0;right:0;width:49%;height:100%;z-index:1">
+      </div>
+      <div class="swiper-slide slide4">
+        <div class="box">
+          <div class="ani text1" swiper-animate-effect="fadeInUp"
+               swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业的事情交给我们</div>
+          <div class="ani text2" swiper-animate-effect="fadeInUp"
+               swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">您首选的大数据可视化平台</div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>

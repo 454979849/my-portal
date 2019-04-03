@@ -1,0 +1,298 @@
+<div class="api">
+  <div class="detailInfo">
+    <div class="left fl">
+      <div class="t">
+        <h1>{{detailBase.name}}</h1>
+        <!--<div class="heart">-->
+          <!--<i class="fa fa-heart-o"></i>-->
+          <!--<span>收藏</span>-->
+        <!--</div>-->
+      </div>
+      <div class="b">
+        <div class="left fl">
+          <img src="../../../asset/hotDataImg.png">
+        </div>
+        <div class="right fr">
+          <p class="line">
+            <span class="labels">所属目录：</span>
+            <span class="c">{{detailBase.catalog.map((item)=>{return item.catalog_name;}).join('、')}}</span>
+          </p>
+          <p class="line">
+            <span class="labels">浏览次数：</span>
+            <span class="c">{{detailBase.browse_time}}</span>
+          </p>
+          <p class="line">
+            <span class="labels">注册时间：</span>
+            <span class="c">2{{detailBase.create_date}}</span>
+          </p>
+          <a class="addApply">立即申请</a>
+        </div>
+      </div>
+    </div>
+    <div class="right fr">
+      <div class="name">刘洋先生</div>
+      <img src="../../../asset/userDefault.jpg" >
+      <p>联系电话：17786475086</p>
+    </div>
+  </div>
+  <div class="tabBox">
+    <div class="tabs">
+      <p class="active">API详情</p>
+      <p>产品详情</p>
+      <p>评论</p>
+      <p>错误码参照</p>
+      <p>其他相关</p>
+    </div>
+    <div class="contentBox">
+      <div>
+        <div class="tt">艺人粉丝数排行点击测试</div>
+        <table class="grid">
+          <tr>
+            <td>标识</td>
+            <td>fans</td>
+          </tr>
+          <tr>
+            <td>接口地址</td>
+            <td>http://api.qtjiaoyi.com/fans/query</td>
+          </tr>
+          <tr>
+            <td>请求方式</td>
+            <td>http GET</td>
+          </tr>
+          <tr>
+            <td>接口描述</td>
+            <td>艺人粉丝数排行榜统计数据，包括艺人名称，粉丝数，签到数，粉丝口号，今日排名，今日签到数，可按艺人名称查询，全面实时数据。</td>
+          </tr>
+          <tr>
+            <td>请求示例</td>
+            <td>	http://api.qtjiaoyi.com/fans/query?name=王源&access_token=您申请的ACCESSTOKEN</td>
+          </tr>
+          <tr>
+            <td>调用频次</td>
+            <td>3次/秒</td>
+          </tr>
+        </table>
+        <div class="tt">系统级别请求参数</div>
+        <table class="list">
+          <tr>
+            <th>名称</th>
+            <th>类型</th>
+            <th>必填</th>
+            <th>示例值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>access_token</td>
+            <td>String</td>
+            <td>是</td>
+            <td>-</td>
+            <td>您申请的ACCESSTOKEN</td>
+          </tr>
+        </table>
+        <div class="tt">应用级别请求参数</div>
+        <table class="list">
+          <tr>
+            <th>名称</th>
+            <th>类型</th>
+            <th>必填</th>
+            <th>示例值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>String</td>
+            <td>否</td>
+            <td>王源</td>
+            <td>艺人名称</td>
+          </tr>
+        </table>
+        <div class="tt">系统级别返回参数</div>
+        <table class="list">
+          <tr>
+            <th>错误</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>status</td>
+            <td>状态码，200表示成功</td>
+          </tr>
+          <tr>
+            <td>message</td>
+            <td>返回信息</td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>返回数据</td>
+          </tr>
+        </table>
+        <div class="tt">应用级别返回参数</div>
+        <table class="list">
+          <tr>
+            <th>名称</th>
+            <th>类型</th>
+            <th>示例值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>star</td>
+            <td>String</td>
+            <td>五月天</td>
+            <td>艺人名称</td>
+          </tr>
+          <tr>
+            <td>fansCount</td>
+            <td>String</td>
+            <td>19</td>
+            <td>粉丝数</td>
+          </tr>
+          <tr>
+            <td>signInCount</td>
+            <td>String</td>
+            <td>534</td>
+            <td>签到数</td>
+          </tr>
+        </table>
+        <div class="tt">返回示例值</div>
+        <pre>
+{
+    "dataType": "nlp.text2kw",
+    "appCode": "bitspaceman",
+    "version": "v0.0.3",
+    "retcode": "000000",
+    "RankDist": [
+        {
+            "word": "电子商务",
+            "weight": 0.049091056026931
+        },
+        {
+            "word": "市场",
+            "weight": 0.039893465033964
+        },
+        {
+            "word": "影响",
+            "weight": 0.035509864871041
+        },
+        {
+            "word": "企业",
+            "weight": 0.034615729815999
+        },
+        {
+            "word": "大多",
+            "weight": 0.027233742013457
+        },
+        {
+            "word": "变量",
+            "weight": 0.027233742013457
+        },
+        {
+            "word": "天猫",
+            "weight": 0.024221000261849
+        },
+        {
+            "word": "平台",
+            "weight": 0.024221000261849
+        },
+        {
+            "word": "创新",
+            "weight": 0.023595242268985
+        },
+        {
+            "word": "价值",
+            "weight": 0.023407948724004
+        }
+    ]
+}
+        </pre>
+      </div>
+      <div>
+        <table class="grid">
+          <tr>
+            <td>数据描述</td>
+            <td>接口提供艺人粉丝数排行榜统计数据查询，包括艺人名称，粉丝数，签到数，粉丝口号，今日排名，今日签到数，可按艺人名称查询，全面实时数据。</td>
+          </tr>
+          <tr>
+            <td>更新频率</td>
+            <td>每日</td>
+          </tr>
+          <tr>
+            <td>应用场景</td>
+            <td>从事娱乐行业舆情调查，数据分析。</td>
+          </tr>
+          <tr>
+            <td>覆盖范围</td>
+            <td>覆盖时下当红艺人，数据每日更新</td>
+          </tr>
+          <tr>
+            <td>API内容介绍</td>
+            <td>该接口提供艺人粉丝数排行榜统计数据查询，维度有艺人名称，粉丝数，签到数，粉丝口号，今日排名，今日签到数，可按艺人名称查询，全面实时数据。</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        {{include '../../base/comment/comment.art'}}
+      </div>
+      <div>
+        <table class="list">
+          <tr>
+            <th style="width:150px;">系统级别错误码</th>
+            <th>错误描述</th>
+          </tr>
+          <tr>
+            <td>3004</td>
+            <td>请求参数不存在</td>
+          </tr>
+          <tr>
+            <td>3005</td>
+            <td>请求过于频繁，请稍后再试</td>
+          </tr>
+          <tr>
+            <td>3006</td>
+            <td>access_token参数不能为空</td>
+          </tr>
+          <tr>
+            <td>3007</td>
+            <td>该IP已被禁用</td>
+          </tr>
+          <tr>
+            <td>3008</td>
+            <td>接口需要付费，请充值</td>
+          </tr>
+        </table>
+        <table class="list">
+          <tr>
+            <th style="width:150px;">应用级别错误码</th>
+            <th>错误描述</th>
+          </tr>
+          <tr>
+            <td>300</td>
+            <td>缺少艺人姓名参数</td>
+          </tr>
+          <tr>
+            <td>301</td>
+            <td>未查询到数据</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table class="list">
+          <tr>
+            <th>内容</th>
+            <th>详情</th>
+          </tr>
+          <tr>
+            <td>技术支持(QQ群):</td>
+            <td>567710134</td>
+          </tr>
+          <tr>
+            <td>客服电话:</td>
+            <td>0571-22872851</td>
+          </tr>
+          <tr>
+            <td>在线客服QQ:</td>
+            <td>3475528455</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

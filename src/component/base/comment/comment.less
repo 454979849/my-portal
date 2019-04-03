@@ -1,0 +1,142 @@
+.commentArea{
+  padding:20px;
+  width: 100%;
+  background-color: #fff;
+  .release{
+    width:100%;
+    &>.h{
+      height:50px;
+      img{
+        height:100%;
+        float:left;
+        margin-left:15px;
+        border-radius:50%;
+      }
+      p{
+        float:right;
+        font-size: 14px;
+        color: #737373;
+        padding-top: 30px;
+      }
+    }
+    textarea{
+      width: 100%;
+      height: 120px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      padding: 9px;
+      color: #333;
+      outline: none;
+      resize: none;
+      margin-top: 7px;
+      &:focus{
+        border-color:rgb(21,170,251);
+      }
+    }
+    &>.f{
+      height:40px;
+      margin-top:15px;
+      a{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #409EFF;
+        display: block;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #fff;
+        float:right;
+        &:hover{
+          background-color: #0096e8;
+        }
+      }
+    }
+  }
+  &>p.text{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    padding-top: 40px;
+  }
+  .allComment{
+    &>ul{
+      &>li{
+        height: 175px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 8px;
+        overflow: hidden;
+        position: relative;
+        &>.left{
+          width: 80px;
+          height: 175px;
+          border-right: 1px solid #ccc;
+          text-align:center;
+          img{
+            margin-top:15px;
+            width:50px;
+            border-radius:50%;
+          }
+          p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+            margin-top: 7px;
+          }
+        }
+        &>.right{
+          margin-left:80px;
+          height:175px;
+          padding:0 15px;
+          .h{
+            height: 35px;
+            line-height: 35px;
+            font-size: 12px;
+            color: #999;
+            border-bottom: 1px dashed #ccc;
+          }
+          .b{
+            word-break: break-all;
+            height: 100px;
+            padding-top: 23px;
+            font-size: 14px;
+            color: #333;
+          }
+          .f{
+            text-align:right;
+            p{
+              display:inline-block;
+              cursor:pointer;
+              &:hover{
+                i{
+                  color:#409EFF;
+                }
+              }
+              &:first-child{
+                margin-right:80px;
+              }
+              i{
+                font-size: 18px;
+                color: #999;
+                vertical-align: middle;
+                transition:all .3s;
+                &.active{
+                  color:#409EFF;
+                }
+              }
+              span{
+                font-size: 14px;
+                color: #999;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+<div class="data">
+  <div class="detailInfo">
+    <div class="left fl">
+      <div class="t">
+        <h1>{{detailBase.name}}</h1>
+        <!--<div class="heart">-->
+          <!--<i class="fa fa-heart-o"></i>-->
+          <!--<span>收藏</span>-->
+        <!--</div>-->
+      </div>
+      <div class="b">
+        <div class="left fl">
+          <img src="{{detailBase.icon}}">
+        </div>
+        <div class="right fr">
+          <p class="line">
+            <span class="labels">所属目录：</span>
+            <span class="c">{{detailBase.catalog.map((item)=>{return item.catalog_name;}).join('、')}}</span>
+          </p>
+          <p class="line">
+            <span class="labels">浏览次数：</span>
+            <span class="c">{{detailBase.browse_time}}</span>
+          </p>
+          <p class="line">
+            <span class="labels">注册时间：</span>
+            <span class="c">{{detailBase.create_date}}</span>
+          </p>
+          <a class="addApply">立即申请</a>
+        </div>
+      </div>
+    </div>
+    <div class="right fr">
+      <div class="name">刘洋先生</div>
+      <img src="../../../asset/userDefault.jpg" >
+      <p>联系电话：17786475086</p>
+    </div>
+  </div>
+  <div class="tabBox">
+    <div class="tabs">
+      <p class="active">资源介绍</p>
+      <p>样例展示</p>
+      <p>评论</p>
+    </div>
+    <div class="contentBox">
+      <div>
+        <table class="grid">
+          <tr>
+            <td>资源描述</td>
+            <td>{{detailBase.remark}}</td>
+          </tr>
+          <tr>
+            <td>所属目录</td>
+            <td>{{detailBase.catalog.map((item)=>{return item.catalog_name;}).join('、')}}</td>
+          </tr>
+          <tr>
+            <td>资源类型</td>
+            <td>{{detailBase.type}}</td>
+          </tr>
+          <tr>
+            <td>标签</td>
+            <td>{{detailBase.service_label}}</td>
+          </tr>
+          <tr>
+            <td>领域</td>
+            <td>{{detailBase.domain}}</td>
+          </tr>
+          <tr>
+            <td>保密级别</td>
+            <td>{{detailBase.secret_level}}</td>
+          </tr>
+          <tr>
+            <td>主题分类</td>
+            <td>{{detailBase.theme_type}}</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        {{include '../../base/comment/comment.art'}}
+      </div>
+    </div>
+  </div>
+</div>

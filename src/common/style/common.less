@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.containers {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableNoneData {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+
+//将引用的个别element-ui的控件的样式设计成仿bootstrap4的风格，以统一风格
+.el-range-editor.is-active, .el-range-editor.is-active:hover, .el-select .el-input.is-focus .el-input__inner{
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+//bootstrap部分样式覆盖
+
+body {
+  font-size: 14px !important;
+  .form-group{
+    margin-bottom:0;
+    min-height:65px;
+  }
+  p {
+    margin: 0;
+  }
+
+  ol, ul, li {
+    margin: 0;
+    list-style: none;
+  }
+
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  .alert {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    min-width: 300px;
+    max-width: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+  }
+
+  .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+
+  .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+
+  .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+  }
+
+  .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+}

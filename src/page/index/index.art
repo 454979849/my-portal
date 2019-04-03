@@ -1,0 +1,48 @@
+{{extend '../../layout/layout.art'}}
+{{block 'title'}}首页{{/block}}
+{{block 'content'}}
+<script src="<%= htmlWebpackPlugin.options.publicPath %>static/swiper.animate.min.js"></script>
+
+{{include '../../component/base/banner/banner.art'}}
+<ul id="products">
+  <div class="containers">
+    <a href="../views/media.html" target="_blank"></a>
+    <a href="../views/media.html" target="_blank"></a>
+    <a href="../views/media.html" target="_blank"></a>
+    <a href="../views/media.html" target="_blank"></a>
+    <a href="../views/media.html" target="_blank"></a>
+  </div>
+
+</ul>
+<div class="containers">
+
+  <div id="hotData">
+    <div class="tit">
+      <img src="../../asset/tit1_03.jpg">
+      <a href="../views/info.html">查看更多</a>
+    </div>
+    {{include '../../component/index/hotData/hotData.art'}}
+  </div>
+
+  <div id="newData">
+    <div class="tit">
+      <img src="../../asset/tit3_03.jpg">
+      <a href="../views/info.html">查看更多</a>
+    </div>
+    {{include '../../component/index/newData/newData.art'}}
+  </div>
+
+  <div id="dynamic">
+    <div class="tit">
+      <img src="../../asset/tit3_04.png">
+      <a href="">查看更多</a>
+      <!--<div class="tabs fr">-->
+        <!--<div class="tab1 active">领导关注</div>-->
+        <!--<div class="tab2">公司动态</div>-->
+      <!--</div>-->
+    </div>
+    {{include '../../component/index/dynamic/dynamic.art'}}
+  </div>
+</div>
+
+{{/block}}

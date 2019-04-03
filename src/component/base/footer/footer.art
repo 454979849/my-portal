@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="main">
+    <div class="containers">
+      <ul>
+        <li>
+          <div class="t">
+            <i class="fa fa-home"></i>
+            <span>联系我们</span>
+          </div>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span>服务热线：027-12345678</span>
+          </p>
+          <p>
+            <i class="fa fa-qq"></i>
+            <span>QQ：454979849</span>
+          </p>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bot">
+    Copyright &copy; 2017 江苏智途科技股份有限公司 版权所有 苏公网安备 32100202010243号
+  </div>
+</footer>

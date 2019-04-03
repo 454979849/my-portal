@@ -1,0 +1,29 @@
+<ul class="list">
+  {{each data}}
+  <a class="item"  href="../views/detail.html?type={{$value.oldtype}}&id={{$value.id}}" target="_blank">
+    <div class="left fl">
+      <div class="center">
+        <img src="{{$value.icon}}" >
+        <div style="margin-top:15px;text-align:center;">
+          <b>资源类型：</b> <span>{{$value.type}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="right fr">
+      <h3>{{$value.name}}</h3>
+      <div class="middle">
+        <b>资源描述：</b>
+        <span>{{$value.remark}}</span>
+      </div>
+      <div>
+        <b>申请量：</b>
+        <span>{{$value.apply_number}}</span>
+      </div>
+      <div>
+        <b>注册时间：</b>
+        <span>{{$value.create_date}}</span>
+      </div>
+    </div>
+  </a>
+  {{/each}}
+</ul>
